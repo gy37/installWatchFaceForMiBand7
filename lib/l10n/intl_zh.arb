@@ -1,5 +1,5 @@
 {
-    "appName": "偷天换日",
+    "appName": "小米手环7表盘安装工具",
     "healthEntry": "小米运动健康表盘替换",
     "zeppLifeEntry": "Zepp Life 表盘替换",
     "bleEntry": "通过蓝牙安装表盘",
@@ -24,7 +24,7 @@
     "cancel": "取消",
 
     "health_setTipsContent": "自定义被替换的表盘需要权限访问WatchFace目录，请在接下来的页面中选择“使用此文件夹”",
-    "health_shiYongShuoMing": "使用说明：\n       替换表盘需要先在表盘市场安装[$targetName]表盘，然后回到我的表盘，打开[$targetName]并停留在表盘使用页。将小米运动健康放置到后台再打开本app开始按步骤操作。点击对应步骤即可。",
+    "health_shiYongShuoMing": "使用说明：\n       替换表盘需要先在表盘市场安装[$targetName]表盘，然后回到我的表盘，打开[$targetName]并停留在表盘使用页。将小米运动健康放置到后台再打开本app开始按步骤操作。",
     "health_appbarTitle": "复制表盘->小米运动健康",
     "health_waring": "\n此页面的功能仅适用于小米手环7+小米运动健康",
     "health_step1": "授权访问小米运动健康内部数据",
@@ -41,7 +41,7 @@
     "set_target_noteDesc": "因为文件名称不具有可读性，因此需要您手动输入文件对应的表盘名称，以方便以后对应起来。",
     "set_target_inputHint": "请在此输入表盘名称",
     "set_target_noNameToast": "请输入您所选择的表盘对应的名称，以作备注",
-    "set_target_shuoMing": "如果你知道被替换的表盘对应的文件名称，你可以在这里选择对应的文件。设置后软件将会保存设置，以后都会替换你选择的文件。\n\n建议在选择前先正常安装一次要选择的表盘，以免偷天换日获取到不正确的信息。",
+    "set_target_shuoMing": "如果你知道被替换的表盘对应的文件名称，你可以在这里选择对应的文件。设置后软件将会保存设置，以后都会替换你选择的文件。\n\n建议在选择前先正常安装一次要选择的表盘，以免小米手环7表盘安装工具获取到不正确的信息。",
     "set_target_appbar_title": "自定义被替换的表盘",
     "set_target_file_list": "文件列表",
     "set_target_unknownFile": "未知文件",

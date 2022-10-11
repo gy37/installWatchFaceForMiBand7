@@ -50,10 +50,10 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `偷天换日`
+  /// `小米手环7表盘安装工具`
   String get appName {
     return Intl.message(
-      '偷天换日',
+      '小米手环7表盘安装工具',
       name: 'appName',
       desc: '',
       args: [],

@@ -50,7 +50,7 @@ class MyApp extends StatelessWidget {
       routeInformationProvider: _router.routeInformationProvider,
       routeInformationParser: _router.routeInformationParser,
       routerDelegate: _router.routerDelegate,
-      title: '偷天换日',
+      title: '小米手环7表盘安装工具',
       // ignore: prefer_const_literals_to_create_immutables
       localizationsDelegates: [
         S.delegate,

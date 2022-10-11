@@ -32,12 +32,12 @@ class _IndexPageState extends State<IndexPage> {
       body: Stack(
         children: [
           Positioned(
-            top: 30,
+            top: 10,
             left: 0,
             right: 0,
             child: Center(
               child: Text(
-                "$name $appVersion create by jethroHEX&bandbbs.cn",
+                "V$appVersion create by jethroHEX & bandbbs.cn",
                 style: const TextStyle(color: Colors.grey),
               ),
             ),
@@ -64,18 +64,18 @@ class _IndexPageState extends State<IndexPage> {
               ],
             ),
           ),
-          Positioned(
-            left: 0,
-            right: 0,
-            bottom: 100,
-            child: GestureDetector(
-              onTap: () => context.push("/pay"),
-              child: Text(
-                S.of(context).rewardMe,
-                textAlign: TextAlign.center,
-              ),
-            ),
-          ),
+          // Positioned(
+          //   left: 0,
+          //   right: 0,
+          //   bottom: 100,
+          //   child: GestureDetector(
+          //     onTap: () => context.push("/pay"),
+          //     child: Text(
+          //       S.of(context).rewardMe,
+          //       textAlign: TextAlign.center,
+          //     ),
+          //   ),
+          // ),
         ],
       ),
     );

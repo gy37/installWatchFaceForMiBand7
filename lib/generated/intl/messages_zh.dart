@@ -22,7 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "appName": MessageLookupByLibrary.simpleMessage("偷天换日"),
+        "appName": MessageLookupByLibrary.simpleMessage("小米手环7表盘安装工具"),
         "bleEntry": MessageLookupByLibrary.simpleMessage("通过蓝牙安装表盘"),
         "ble_connect": MessageLookupByLibrary.simpleMessage("连接"),
         "ble_connectFail": MessageLookupByLibrary.simpleMessage("连接失败，请重试"),
@@ -66,7 +66,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "health_setTipsContent": MessageLookupByLibrary.simpleMessage(
             "自定义被替换的表盘需要权限访问WatchFace目录，请在接下来的页面中选择“使用此文件夹”"),
         "health_shiYongShuoMing": MessageLookupByLibrary.simpleMessage(
-            "使用说明：\n       替换表盘需要先在表盘市场安装[\$targetName]表盘，然后回到我的表盘，打开[\$targetName]并停留在表盘使用页。将小米运动健康放置到后台再打开本app开始按步骤操作。点击对应步骤即可。"),
+            "使用说明：\n       替换表盘需要先在表盘市场安装[\$targetName]表盘，然后回到我的表盘，打开[\$targetName]并停留在表盘使用页。将小米运动健康放置到后台再打开本app开始按步骤操作。"),
         "health_step1": MessageLookupByLibrary.simpleMessage("授权访问小米运动健康内部数据"),
         "health_step1_state": MessageLookupByLibrary.simpleMessage("(已授权)"),
         "health_step2": MessageLookupByLibrary.simpleMessage("选择你要替换的表盘"),
@@ -97,7 +97,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "set_target_select": MessageLookupByLibrary.simpleMessage("选择此表盘"),
         "set_target_setSuccess": MessageLookupByLibrary.simpleMessage("设置成功"),
         "set_target_shuoMing": MessageLookupByLibrary.simpleMessage(
-            "如果你知道被替换的表盘对应的文件名称，你可以在这里选择对应的文件。设置后软件将会保存设置，以后都会替换你选择的文件。\n\n建议在选择前先正常安装一次要选择的表盘，以免偷天换日获取到不正确的信息。"),
+            "如果你知道被替换的表盘对应的文件名称，你可以在这里选择对应的文件。设置后软件将会保存设置，以后都会替换你选择的文件。\n\n建议在选择前先正常安装一次要选择的表盘，以免小米手环7表盘安装工具获取到不正确的信息。"),
         "set_target_unknownFile": MessageLookupByLibrary.simpleMessage("未知文件"),
         "sure": MessageLookupByLibrary.simpleMessage("确认"),
         "targetName": MessageLookupByLibrary.simpleMessage("火星时代"),

@@ -1,3 +1,5 @@
+## 此Fork只是对样式稍微改动，方便自己学习使用，所有功能问题请查看[原项目](https://github.com/jethroHuang/installWatchFaceForMiBand7)
+
 # installWatchFaceForMiBand7
 
 使用此app可通过蓝牙为小米手环7安装表盘及小程序。也可以使用替换法进行安装

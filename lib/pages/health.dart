@@ -191,10 +191,10 @@ class _HealthPageState extends State<HealthPage> with RouteAware {
       appBar: AppBar(
         title: Text(S.of(context).health_appbarTitle),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: goSet,
-          )
+          // IconButton(
+          //   icon: const Icon(Icons.settings),
+          //   onPressed: goSet,
+          // )
         ],
       ),
       body: SingleChildScrollView(
@@ -203,7 +203,7 @@ class _HealthPageState extends State<HealthPage> with RouteAware {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.all(20),
+              padding: const EdgeInsets.fromLTRB(20, 20, 20, 70),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -222,53 +222,58 @@ class _HealthPageState extends State<HealthPage> with RouteAware {
                     TextStyle(color: listening ? Colors.green : Colors.black87),
               ),
             ),
-            MaterialButton(
-              onPressed: () => ctl.getPermission(),
-              child: ValueListenableBuilder(
-                valueListenable: ctl.havePromise,
-                builder: (ctx, bool val, child) {
-                  var promise = "1. ${s.health_step1}";
-                  if (val) {
-                    promise = "$promise${s.health_step1_state}";
-                  }
-                  return SizedBox(
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 30),
+              child: Column(children: [
+                ElevatedButton(
+                  onPressed: () => ctl.getPermission(),
+                  child: ValueListenableBuilder(
+                    valueListenable: ctl.havePromise,
+                    builder: (ctx, bool val, child) {
+                      var promise = "1. ${s.health_step1}";
+                      if (val) {
+                        promise = "$promise${s.health_step1_state}";
+                      }
+                      return SizedBox(
+                        width: double.infinity,
+                        child: Text(promise),
+                      );
+                    },
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: () => ctl.selectWatchFace(),
+                  child: ValueListenableBuilder(
+                    valueListenable: ctl.selectName,
+                    builder: (context, String val, child) {
+                      var selectText = "2. ${s.health_step2}";
+                      if (val.isNotEmpty) {
+                        selectText = "$selectText(${s.health_step2_state}$val)";
+                      }
+                      return SizedBox(
+                        width: double.infinity,
+                        child: Text(selectText),
+                      );
+                    },
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: startFind,
+                  child: SizedBox(
                     width: double.infinity,
-                    child: Text(promise),
-                  );
-                },
-              ),
-            ),
-            MaterialButton(
-              onPressed: () => ctl.selectWatchFace(),
-              child: ValueListenableBuilder(
-                valueListenable: ctl.selectName,
-                builder: (context, String val, child) {
-                  var selectText = "2. ${s.health_step2}";
-                  if (val.isNotEmpty) {
-                    selectText = "$selectText(${s.health_step2_state}$val)";
-                  }
-                  return SizedBox(
+                    child: Text("3. ${s.health_step3}"),
+                  ),
+                ),
+                ElevatedButton(
+                  onPressed: openXMYD,
+                  child: SizedBox(
                     width: double.infinity,
-                    child: Text(selectText),
-                  );
-                },
-              ),
+                    child: Text("4. $step4Text"),
+                  ),
+                ),
+              ]),
             ),
-            MaterialButton(
-              onPressed: startFind,
-              child: SizedBox(
-                width: double.infinity,
-                child: Text("3. ${s.health_step3}"),
-              ),
-            ),
-            MaterialButton(
-              onPressed: openXMYD,
-              child: SizedBox(
-                width: double.infinity,
-                child: Text("4. $step4Text"),
-              ),
-            ),
-            buildTools(),
+            // buildTools(),
           ],
         ),
       ),

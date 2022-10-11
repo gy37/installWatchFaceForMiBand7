@@ -22,7 +22,7 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "appName": MessageLookupByLibrary.simpleMessage("偷天换日"),
+        "appName": MessageLookupByLibrary.simpleMessage("小米手环7表盘安装工具"),
         "bleEntry": MessageLookupByLibrary.simpleMessage(
             "Install WatchFace via Bluetooth"),
         "ble_connect": MessageLookupByLibrary.simpleMessage("connection"),

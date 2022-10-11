@@ -8,7 +8,7 @@
    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
    <application
-        android:label="偷天换日"
+        android:label="小米手环7表盘安装工具"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
