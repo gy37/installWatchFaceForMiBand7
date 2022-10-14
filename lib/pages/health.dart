@@ -191,10 +191,10 @@ class _HealthPageState extends State<HealthPage> with RouteAware {
       appBar: AppBar(
         title: Text(S.of(context).health_appbarTitle),
         actions: [
-          // IconButton(
-          //   icon: const Icon(Icons.settings),
-          //   onPressed: goSet,
-          // )
+          IconButton(
+            icon: const Icon(Icons.settings),
+            onPressed: goSet,
+          )
         ],
       ),
       body: SingleChildScrollView(
